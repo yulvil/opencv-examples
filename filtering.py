@@ -9,8 +9,8 @@ def show_img(img):
   cv2.destroyAllWindows()
 
 img = cv2.imread('in.jpg')
-#gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-gray = 255*(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) > 5).astype('uint8')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#gray = 255*(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) > 5).astype('uint8')
 
 blur1 = cv2.blur(gray, (1,1))
 blur3 = cv2.blur(gray, (3,3))
